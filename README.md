@@ -20,6 +20,11 @@ REPOSITORY                TAG         IMAGE ID      CREATED         SIZE
 localhost/kdwatch         latest      bc44dd077c39  1 minutes ago   1.12 GB
 docker.io/library/ubuntu  latest      ffb64c9b7e8b  6 weeks ago     103 MB
 ```
+Hint:
+To remove an image
+```
+%podman rmi -f kdwatch
+```
 
 # run kdwatch image in your ietf draft folder
 make sure only one mkd file in your folder
