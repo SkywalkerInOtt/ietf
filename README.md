@@ -1,5 +1,4 @@
 # ietf author tool with kdwatch in container
-
 https://github.com/cabo/kdwatch
 
 # Install podman
@@ -8,3 +7,9 @@ https://podman-desktop.io/docs/installation/macos-install
 
 Install and start podman from podman-desktop
 Once podman is running, start a terminal to access podman CLI
+
+# git clone or copy the Dockerfile
+
+# build a container image
+podman build . -t kdwatch
+
