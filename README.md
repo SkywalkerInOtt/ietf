@@ -32,3 +32,11 @@ make sure only one mkd file in your folder
 ```
 %podman run -it -p 7991:7991 -p 59225:59225 -v `pwd`:/var/mkd kdwatch
 ```
+
+# view the html output on your working machine
+http://127.0.0.1:7991/
+
+Hint:
+- Check console output of the container to see if there's any xml2rfc errors and fix them.
+- After editing and saving the mkd file, if the browser is not refreshing, manually refresh it
+- 
