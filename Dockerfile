@@ -3,7 +3,7 @@ ENV RUBYOPT="-KU -E utf-8:utf-8"
 RUN apt-get update && \
     apt-get install -y python3 && \
     apt-get install -y python3-pip
-RUN pip3 install --update xml2rfc --break-system-packages
+RUN pip3 install --upgrade xml2rfc --break-system-packages
 RUN apt-get update && \
     apt-get install -y xdg-utils && \
     apt-get install -y libffi-dev && \
@@ -14,4 +14,4 @@ RUN apt-get update && \
 RUN gem update
 RUN gem install kdwatch
 WORKDIR /var/mkd
-ENTRYPOINT kdwtach -i *.mkd
+ENTRYPOINT kdwatch -i *.mkd
